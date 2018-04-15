@@ -12,9 +12,6 @@
       <header class="main-header">
         <a class="brand-logo">
           <img class="brand-logo__picture" src="http://placehold.it/33x38" alt="CatEnergy Logo">
-        </a>
-
-        <a class="brand-logo">
           <img class="brand-logo__name" src="http://placehold.it/101x31" alt="CatEnergy Logo">
         </a>
 
@@ -34,17 +31,21 @@
       </header>
 
       <main class="page-content">
-        <h1 class="page-content__heading">Каталог продукции</h1>
+        <div class="page-content__heading-wrapper">
+          <h1 class="page-content__heading">Каталог продукции</h1>
+        </div>
 
         <section class="catalog">
           <h2 class="visually-hidden">Товары</h2>
 
           <article class="shopping-card">
-            <a href="this-product.html">
+            <a class="shopping-card__image-wrapper" href="this-product.html">
               <img class="shopping-card__image" src="http://placehold.it/140x144" alt="Cat Energy Slim 500 г">
             </a>
             <div class="shopping-card__info">
-              <a class="shopping-card__title" href="this-product.html">Cat Energy Slim 500 г</a>
+              <h1 class="shopping-card__title">
+                <a href="this-product.html">Cat Energy Slim 500 г</a>
+              </h1>
 
               <table class="shopping-card__table">
                 <tr class="shopping-card__parameter">
@@ -60,19 +61,6 @@
                   <td class="shopping-card__parameter-value">500 Р.</td>
                 </tr>
               </table>
-
-              <!-- <div class="shopping-card__parameter">
-                <p class="shopping-card__parameter-title">Объём</p>
-                <p class="shopping-card__parameter-value">500 г</p>
-              </div>
-              <div class="shopping-card__parameter">
-                <p class="shopping-card__parameter-title">Вкус</p>
-                <p class="shopping-card__parameter-value">Рис</p>
-              </div>
-              <div class="shopping-card__parameter">
-                <p class="shopping-card__parameter-title">Цена</p>
-                <p class="shopping-card__parameter-value">500 Р.</p>
-              </div> -->
             </div>
             <a class="shopping-card__btn btn" href="checkout.html">Заказать</a>
           </article>
