@@ -20,12 +20,12 @@
 
         <button class="menu-toggle-button">&times;</button>
 
-        <ul class="main-menu main-menu-is-open">
+        <ul class="main-menu main-menu--is-open">
           <li class="main-menu__item">
             <a class="main-menu__item-link" href="index.html">Главная</a>
           </li>
           <li class="main-menu__item">
-            <a class="main-menu__item-link" href="catalog.html">Каталог продукции</a>
+            <a class="main-menu__item-link">Каталог продукции</a>
           </li>
           <li class="main-menu__item">
             <a class="main-menu__item-link" href="form.html">Подбор программы</a>
@@ -34,18 +34,34 @@
       </header>
 
       <main class="page-content">
-        <h1 class="h1">Каталог продукции</h1>
+        <h1 class="page-content__heading">Каталог продукции</h1>
 
         <section class="catalog">
-          <h2 class="visually-hidden" hidden>Hidden h2 for SEO and validator</h2>
+          <h2 class="visually-hidden">Товары</h2>
 
-          <div class="shopping-card">
+          <article class="shopping-card">
             <a href="this-product.html">
               <img class="shopping-card__image" src="http://placehold.it/140x144" alt="Cat Energy Slim 500 г">
             </a>
             <div class="shopping-card__info">
               <a class="shopping-card__title" href="this-product.html">Cat Energy Slim 500 г</a>
-              <div class="shopping-card__parameter">
+
+              <table class="shopping-card__table">
+                <tr class="shopping-card__parameter">
+                  <td class="shopping-card__parameter-title">Объём</td>
+                  <td class="shopping-card__parameter-value">500 г</td>
+                </tr>
+                <tr class="shopping-card__parameter">
+                  <td class="shopping-card__parameter-title">Вкус</td>
+                  <td class="shopping-card__parameter-value">Рис</td>
+                </tr>
+                <tr class="shopping-card__parameter">
+                  <td class="shopping-card__parameter-title">Цена</td>
+                  <td class="shopping-card__parameter-value">500 Р.</td>
+                </tr>
+              </table>
+
+              <!-- <div class="shopping-card__parameter">
                 <p class="shopping-card__parameter-title">Объём</p>
                 <p class="shopping-card__parameter-value">500 г</p>
               </div>
@@ -56,15 +72,15 @@
               <div class="shopping-card__parameter">
                 <p class="shopping-card__parameter-title">Цена</p>
                 <p class="shopping-card__parameter-value">500 Р.</p>
-              </div>
+              </div> -->
             </div>
             <a class="shopping-card__btn btn" href="checkout.html">Заказать</a>
-          </div>
+          </article>
           <!-- Остальные карточки добавлю если тут всё норм -->
 
           <div class="catalog-helper-card">
             <img class="catalog-helper-card__icon" src="http://placehold.it/30x30" alt="+">
-            <p class="catalog-helper-card__lead">Показать еще 100500 товаров</p>
+            <h3 class="catalog-helper-card__lead">Показать еще 100500 товаров</h3>
             <p class="catalog-helper-card__copy">На самом деле вкусов гораздо больше!</p>
             <a class="catalog-helper-card__btn btn btn--secondary" href="new-products.html">Показать все</a>
           </div>
@@ -72,7 +88,7 @@
         </section>
 
         <section class="additional-products">
-          <h2 class="h2">Дополнительные товары</h2>
+          <h2 class="page__subheading">Дополнительные товары</h2>
 
           <div class="shopping-card-secondary">
             <p class="shopping-card-secondary__title">Сахарозаменитель</p>
@@ -118,7 +134,9 @@
 
       <footer class="main-footer">
         <div class="main-footer__logo">
-          <img class="footer-logo" src="http://placehold.it/128x24" alt="HTML Academy" width="128" height="24">
+          <a href="index.html">
+            <img class="footer-logo" src="http://placehold.it/128x24" alt="HTML Academy" width="128" height="24">
+          </a>
         </div>
 
         <div class="main-footer__socials">
@@ -136,8 +154,9 @@
         </div>
 
         <div class="main-footer__copyright copyright">
-          <a class="copyright__subject" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
           <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+            <p class="copyright__subject">HTML Academy</p>
+
             <img class="copyright__logo" src="./img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
           </a>
         </div>
