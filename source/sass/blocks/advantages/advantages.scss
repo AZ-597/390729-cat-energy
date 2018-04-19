@@ -1,15 +1,10 @@
-.advantages {
+.advantages {}
 
+.advantages__list {
+  @include reset-list;
+  flex-flow: column nowrap;
 }
 
-.advantages .advantages__list {
+.advantages__item {}
 
-}
-
-.advantages .advantages__item {
-
-}
-
-.advantages .advantages__item-copy {
-
-}
+.advantages__item-copy {}

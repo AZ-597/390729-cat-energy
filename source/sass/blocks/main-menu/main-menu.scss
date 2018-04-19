@@ -1,15 +1,11 @@
 .main-menu {
-
+  @include reset-list;
+  display: none;
+  &--is-open {
+    display: flex;
+  }
 }
 
-.main-menu.main-menu--is-open {
+.main-menu__item {}
 
-}
-
-.main-menu .main-menu__item {
-
-}
-
-.main-menu .main-menu__item-link {
-
-}
+.main-menu__item-link {}
