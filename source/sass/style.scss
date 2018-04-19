@@ -1,0 +1,22 @@
+@import "_variables";
+@import "_mixins";
+
+@import "fonts";
+@import "normalize";
+
+:root {
+  box-sizing: border-box;
+  font-family: $primary-font;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  font-family: inherit;
+}
+
+body { margin: 0 }
+img { max-width: 100% }
+a { text-decoration: none }
+@import "snippets";

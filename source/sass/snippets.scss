@@ -1,0 +1,17 @@
+label[for],
+button,
+input,
+select {
+  cursor: pointer;
+}
+
+img:not([alt]),
+img[alt=""] {
+  outline: 5px solid red;
+}
+
+abbr[title],
+acronym[title],
+dfn {
+  cursor: help;
+}
