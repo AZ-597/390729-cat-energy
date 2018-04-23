@@ -1,39 +1,49 @@
 .shopping-card {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding: 24px 20px;
+  border-top: 1px solid $grey-50;
+}
+
+.shopping-card__image-wrapper {
+  width: 50%;
+}
+
+.shopping-card__image {
 
 }
 
-.shopping-card .shopping-card__image-wrapper {
+.shopping-card__info {
+  width: 50%;
+}
+
+.shopping-card__title {
+  font: 400 16px/20px $primary-font;
+  text-transform: uppercase;
+  & a {
+    color: $black;
+  }
+}
+
+.shopping-card__table {
+  font: normal 12px/16px $secondary-font;
+  width: 100%;
+  outline: 1px dashed hotpink;
+}
+
+.shopping-card__parameter {
 
 }
 
-.shopping-card .shopping-card__image {
+.shopping-card__parameter-title {
 
 }
 
-.shopping-card .shopping-card__info {
+.shopping-card__parameter-value {
 
 }
 
-.shopping-card .shopping-card__title {
+.shopping-card__btn {
 
 }
-
-.shopping-card .shopping-card__table {
-
-}
-
-.shopping-card .shopping-card__parameter {
-
-}
-
-.shopping-card .shopping-card__parameter-title {
-
-}
-
-.shopping-card .shopping-card__parameter-value {
-
-}
-
-.shopping-card .shopping-card__btn {
-
-}

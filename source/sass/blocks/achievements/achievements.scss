@@ -1,27 +1,32 @@
 .achievements {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.achievements__table {
 
 }
 
-.achievements .achievements__table {
+.achievements__items-lead {
 
 }
 
-.achievements .achievements__items-lead {
+.achievements__lead-value {
+  font: 400 24px/24px $primary-font;
+  text-transform: uppercase;
+}
+
+.achievements__items-goal {
 
 }
 
-.achievements .achievements__lead-value {
-
+.achievements__goal-value {
+  font: normal 12px/12px $secondary-font;
+  text-transform: uppercase;
 }
 
-.achievements .achievements__items-goal {
-
+.achievements__summary {
+  font: 400 14px/18px $primary-font;
+  text-transform: uppercase;
 }
-
-.achievements .achievements__goal-value {
-
-}
-
-.achievements .achievements__summary {
-
-}

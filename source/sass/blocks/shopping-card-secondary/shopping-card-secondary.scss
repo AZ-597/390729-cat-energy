@@ -1,19 +1,32 @@
 .shopping-card-secondary {
-
+  display: flex;
+  flex-flow: row wrap;
+  padding: 18px 0;
+  border-top: 1px solid $grey-60;
+  &:nth-of-type(4) {
+    border-bottom: 1px solid $grey-60;
+  }
 }
 
-.shopping-card-secondary .shopping-card-secondary__title {
-
+.shopping-card-secondary__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font: 400 16px/16px $primary-font;
+  text-transform: uppercase;
+  width: 100%;
 }
 
-.shopping-card-secondary .shopping-card-secondary__size {
-
+.shopping-card-secondary__size {
+  margin: 0;
+  font: normal 14px/14px $secondary-font;
 }
 
-.shopping-card-secondary .shopping-card-secondary__cost {
-
+.shopping-card-secondary__cost {
+  margin: 0;
+  margin-left: auto;
+  font: normal 14px/14px $secondary-font;
 }
 
-.shopping-card-secondary .shopping-card-secondary__btn {
-
-}
+.shopping-card-secondary__btn {
+  margin-top: 16px;
+}

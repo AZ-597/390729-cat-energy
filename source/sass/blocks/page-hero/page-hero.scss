@@ -1,11 +1,28 @@
 .page-hero {
-
+  background-image: url("../../../img/index-can-mobile@1x.png"), url("../../../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center 160px, top center;
+  & .wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    min-height: 470px;
+  }
+  & .btn {
+    margin-top: auto;
+  }
 }
 
-.page-hero .page-hero__heading {
-
+.page-hero__heading {
+  margin: 0;
+  margin-bottom: 16px;
+  text-align: center;
+  font: 400 36px/1 $primary-font;
+  color: white;
 }
 
-.page-hero .page-hero__lead-text {
-
-}
+.page-hero__lead-text {
+  font: 400 14px/1 $primary-font;
+  color: white;
+  text-transform: uppercase;
+}

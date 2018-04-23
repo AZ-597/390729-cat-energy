@@ -2,7 +2,10 @@
   background-color: $grey-50;
 }
 
-.example__copy {}
+.example__copy {
+  margin: 0;
+  font: normal 14px/18px $secondary-font;
+}
 
 .example__achievements {}
 

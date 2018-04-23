@@ -1,7 +1,19 @@
 .socials {
   @include reset-list;
+  justify-content: center;
+  align-items: center;
+  height: 63px;
 }
 
 .socials__item {
+  display: flex;
+  width: 22px;
+  height: 22px;
+  border-radius: 5px;
+  /* Просто для наглядности :) */
+  background-color: $grey-80;
+}
 
+.socials__item+.socials__item {
+  margin-left: 30px;
 }

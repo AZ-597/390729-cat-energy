@@ -1,19 +1,37 @@
 .map {
-
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
 }
 
-.map .map__address {
-
+.map__address {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 24px 20px;
+  background-color: $grey-50;
+  &--bg-white {
+    background-color: white;
+  }
 }
 
-.map .map__address-lead {
-
+.map__address-lead {
+  width: 50%;
+  margin: 0;
+  font: 400 16px/20px $primary-font;
+  text-transform: uppercase;
 }
 
-.map .map__address-subject {
-
+.map__address-subject {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-style: normal;
 }
 
-.map .map__map-frame {
-
-}
+.map__map-frame {
+  width: 100%;
+  min-height: 360px;
+  border: none;
+}

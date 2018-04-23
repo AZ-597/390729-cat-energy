@@ -1,11 +1,22 @@
 .special-offer {
-
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  height: 290px;
+  padding: 30px;
+  margin-top: 40px;
+  background-color: $primary-color;
+  background-image: url("../../../img/gift-photo-mobile@1x.jpg");
+  background-position: center;
+  background-repeat:no-repeat;
 }
 
-.special-offer .special-offer__icon {
-
+.special-offer__lead {
+  margin-top: auto;
+  color: white;
+  text-align: center;
+  width: 70%;
 }
 
-.special-offer .special-offer__lead {
-
-}
+.special-offer__picture {
+}

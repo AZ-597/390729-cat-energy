@@ -1,11 +1,15 @@
 .copyright {
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
 }
 
-.copyright .copyright__subject {
-
+.copyright__subject {
+  color: $black;
+  font: 400 16px/1 Arial, Helvetica, sans-serif;
 }
 
-.copyright .copyright__logo {
+.copyright__logo {
 
-}
+}

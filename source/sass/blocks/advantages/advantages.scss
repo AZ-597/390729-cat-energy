@@ -1,10 +1,31 @@
 .advantages {}
 
 .advantages__list {
-  @include reset-list;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
   flex-flow: column nowrap;
 }
 
-.advantages__item {}
+.advantages__item {
+  position: relative;
+  margin-bottom: 20px;
+  margin-left: 80px;
+  &::before {
+    content: "";
+    position: absolute;
+    display: flex;
+    left: -80px;
+    top:0;
+    width: 60px;
+    height: 60px;
+    background-color: $primary-color;
+  }
+}
 
-.advantages__item-copy {}
+.advantages__item-copy {
+  margin: 0;
+  font: normal 14px/18px $secondary-font;
+  min-height: 60px;
+}

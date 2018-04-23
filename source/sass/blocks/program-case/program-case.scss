@@ -1,19 +1,47 @@
 .program-case {
+  padding: 20px;
   background-color: $grey-50;
 }
 
-.program-case__icon {
-
+.program-case+.program-case {
+  margin-top: 20px;
 }
 
 .program-case__lead {
-
+  margin: 0;
+  font: 400 24px/37px $primary-font;
+  text-transform: uppercase;
 }
 
 .program-case__copy {
+  position: relative;
+  font: normal 14px/18px $secondary-font;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: $grey-60;
+    display: flex;
 
+  }
 }
 
 .program-case__link {
-
+  display: flex;
+  font: 400 16px/16px $primary-font;
+  text-transform: uppercase;
+  color: $black;
+  margin-top: 38px;
+  &::after {
+    content: "";
+    display: inline-flex;
+    height: 16px;
+    width: 24px;
+    margin-left: 10px;
+    background: url("../../../img/icon-right-arrow-long.svg") no-repeat;
+    background-position: center center;
+  }
 }

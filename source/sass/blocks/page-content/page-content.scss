@@ -1,15 +1,17 @@
-.page-content {
+.page-content {}
 
+.page-content__heading-wrapper {
+  outline:1px dashed hotpink;
 }
 
-.page-content .page-content__heading-wrapper {
-
+.page-content__heading {
+  margin:0;
+  margin-bottom: 25px;
+  font: 400 36px/60px $primary-font;
 }
 
-.page-content .page-content__heading {
-
+.page-content__subheading {
+  margin:0;
+  margin-bottom: 20px;
+  font: 400 24px/24px $primary-font;
 }
-
-.page-content .page-content__subheading {
-
-}
