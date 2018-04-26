@@ -7,7 +7,10 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 
-gulp.task("style", function() {
+var gulpBemCss = require('gulp-bem-css');
+
+
+gulp.task("style", function () {
   gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
@@ -18,7 +21,7 @@ gulp.task("style", function() {
     .pipe(server.stream());
 });
 
-gulp.task("serve", ["style"], function() {
+gulp.task("serve", ["style"], function () {
   server.init({
     server: "source/",
     notify: false,
@@ -29,4 +32,14 @@ gulp.task("serve", ["style"], function() {
 
   gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
   gulp.watch("source/*.html").on("change", server.reload);
+});
+
+gulp.task('bem-extract', function () {
+  return gulp.src('./source/*.html')
+    .pipe(gulpBemCss({
+      folder: './source/sass/blocks', // Path for creating directories and stylesheet files.
+      extension: 'scss', // Extension of stylesheet files
+      elementSeparator: '__', // Element separator in class names
+      modifierSeparator: '--' // Modifier separator in class names
+    }));
 });
