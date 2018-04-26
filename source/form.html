@@ -10,25 +10,31 @@
 
 <body>
   <div class="page-wrapper">
-    <header class="main-header">
-      <a class="brand-logo">
-        <img class="brand-logo__picture" src="http://placehold.it/33x38" alt="CatEnergy Logo">
-        <img class="brand-logo__name" src="http://placehold.it/101x31" alt="CatEnergy Logo">
-      </a>
+    <header class="page-header">
+      <div class="wrapper">
+        <div class="page-header__mobile-wrap">
+          <a class="header-brand-logo">
+            <img class="header-brand-logo__picture" src="http://placehold.it/33x38" alt="CatEnergy Logo">
+          </a>
+          <a class="header-brand-logo">
+            <img class="header-brand-logo__name" src="http://placehold.it/101x31" alt="CatEnergy Logo">
+          </a>
 
-      <button class="menu-toggle-button">&times;</button>
+          <button class="menu-toggle-button menu-toggle-button--is-open"></button>
+        </div>
 
-      <ul class="main-menu main-menu--is-open">
-        <li class="main-menu__item">
-          <a class="main-menu__item-link" href="index.html">Главная</a>
-        </li>
-        <li class="main-menu__item">
-          <a class="main-menu__item-link" href="catalog.html">Каталог продукции</a>
-        </li>
-        <li class="main-menu__item">
-          <a class="main-menu__item-link">Подбор программы</a>
-        </li>
-      </ul>
+        <ul class="main-menu main-menu--is-open">
+          <li class="main-menu__item">
+            <a class="main-menu__item-link" href="index.html">Главная</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__item-link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__item-link">Подбор программы</a>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main class="page-content">
@@ -38,9 +44,14 @@
 
       <section class="application">
         <h2 class="visually-hidden">Форма заявки</h2>
+
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="form__fieldset">
-            <fieldset>
+          <div class="form__wrapper">
+
+            <p class="form__lead">Заполните анкету и мы подберем программу питания для вашего кота</p>
+
+
+            <div class="form__fieldset">
               <div class="field-text">
                 <label class="field-text__label" for="name">Имя:*</label>
                 <input class="field-text__input" id="name" type="text" name="name" required>
@@ -53,13 +64,11 @@
                 <label class="field-text__label" for="age">Возраст (лет):</label>
                 <input class="field-text__input" id="age" type="number" name="age">
               </div>
-            </fieldset>
-          </div>
+            </div>
 
-          <div class="form__fieldset">
-            <fieldset>
+            <div class="form__fieldset form__fieldset--bordered">
               <div class="field-radio">
-                <input class="field-radio__input" id="choose-decrise-weight" type="radio" name="program-type" value="decriseWeight">
+                <input class="field-radio__input" id="choose-decrise-weight" type="radio" name="program-type" value="decriseWeight" disabled>
                 <label class="field-radio__label" for="choose-decrise-weight">Похудение</label>
               </div>
               <div class="field-radio">
@@ -67,15 +76,17 @@
                 <label class="field-radio__label" for="choose-incrise-weight">Набор массы</label>
               </div>
               <div class="field-radio">
-                <input class="field-radio__input" id="choose-consultation" type="radio" name="program-type" value="consultation">
+                <input class="field-radio__input" id="choose-consultation" type="radio" name="program-type" value="consultation" checked>
                 <label class="field-radio__label" for="choose-consultation">Не знаю (нужен ваш совет)</label>
               </div>
-            </fieldset>
-          </div>
+            </div>
 
-          <div class="form__fieldset">
-            <fieldset>
-              <legend class="form__fieldset-legend">Контактные данные (владельца кота)</legend>
+            <p class="form__fieldset-legend-wrap">
+              <span class="form__fieldset-legend">Контактные данные
+                <br> (владельца кота)</span>
+            </p>
+
+            <div class="form__fieldset">
               <div class="field-text">
                 <label class="field-text__label" for="email">E-mail:*</label>
                 <input class="field-text__input" id="email" type="email" name="email" required>
@@ -84,25 +95,27 @@
                 <label class="field-text__label" for="tel">Телефон:*</label>
                 <input class="field-text__input" id="tel" type="tel" name="tel" required>
               </div>
-            </fieldset>
-          </div>
+            </div>
 
-          <div class="form__fieldset">
-            <fieldset>
-              <legend class="form__fieldset-legend">Комментарий</legend>
+            <p class="form__fieldset-legend-wrap">
+              <span class="form__fieldset-legend">Комментарий</span>
+            </p>
+
+            <div class="form__fieldset">
               <div class="field-textarea">
                 <label class="field-textarea__label visually-hidden" for="letter">Расскажите о повадках кота</label>
                 <textarea class="field-textarea__input" id="letter" name="letter" cols="30" rows="10"></textarea>
               </div>
-            </fieldset>
-          </div>
+            </div>
 
-          <div class="form__fieldset">
-            <fieldset>
-              <legend class="form__fieldset-legend">Дополнительно</legend>
+            <p class="form__fieldset-legend-wrap">
+              <span class="form__fieldset-legend">Дополнительно</span>
+            </p>
+
+            <div class="form__fieldset">
               <div class="field-checkbox">
-                <input class="field-checkbox__input" id="add-sugar-sub" type="checkbox" name="additions" value="sugarSubstitute">
-                <label class="field-checkbox__label" for="add-sugar-sub">Сахарозаменитель</label>
+                <input class="field-checkbox__input" id="add-sugar-sub" type="checkbox" name="additions" value="sugarSubstitute" disabled>
+                <label class="field-checkbox__label" for="add-sugar-sub" >Сахарозаменитель</label>
               </div>
               <div class="field-checkbox">
                 <input class="field-checkbox__input" id="add-water" type="checkbox" name="additions" value="water">
@@ -113,61 +126,57 @@
                 <label class="field-checkbox__label" for="add-milk">Молоко</label>
               </div>
               <div class="field-checkbox">
-                <input class="field-checkbox__input" id="add-vitamines" type="checkbox" name="additions" value="vitamines">
+                <input class="field-checkbox__input" id="add-vitamines" type="checkbox" name="additions" value="vitamines" checked>
                 <label class="field-checkbox__label" for="add-vitamines">Витамины</label>
               </div>
-            </fieldset>
-          </div>
+            </div>
 
-          <button class="form__btn btn" type="submit">Отправить заявку</button>
-          <p class="form__footnote">* — Обязательные поля</p>
+            <button class="form__btn btn" type="submit">Отправить заявку</button>
+            <p class="form__footnote">* — Обязательные поля</p>
+          </div>
         </form>
+
       </section>
+
 
       <section class="map">
         <h2 class="visually-hidden">Карта</h2>
-        <div class="map__address">
-          <p class="map__address-lead">Приглашаем к сотрудничеству дилеров!</p>
-          <address class="map__address-subject">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-          </address>
+        <div class="wrapper">
+          <div class="map__address">
+            <p class="map__address-lead">Приглашаем к сотрудничеству дилеров!</p>
+            <address class="map__address-subject">
+              <span class="map__address-street">ул. Большая Конюшенная д. 19/8</span>
+              <span class="map__address-city">Санкт-Петербург</span>
+            </address>
+          </div>
         </div>
         <iframe class="map__map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123657!2d30.32089461562391!3d59.93879686904846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1523718265597"></iframe>
       </section>
     </main>
 
-    <footer class="main-footer">
-      <div class="main-footer__logo">
-        <a class="footer-logo" href="index.html">
-          <img class="footer-logo__picture" src="./img/logo-footer.svg" alt="HTML Academy" width="128" height="24">
+    <footer class="page-footer">
+      <div class="wrapper">
+        <a href="index.html" class="footer-brand-logo">
+          <img class="footer-brand-logo__picture" src="./img/logo-footer.svg" alt="HTML Academy" width="128" height="24">
         </a>
-      </div>
-
-      <div class="main-footer__socials">
         <ul class="socials">
           <li class="socials__item">
-            <a href="https://vk.com/intensive_adaptive_14" target="_blank">VK</a>
+            <a class="socials__link" href="https://vk.com/intensive_adaptive_14" target="_blank">VK</a>
           </li>
           <li class="socials__item">
-            <a href="https://www.instagram.com/htmlacademy/" target="_blank">IG</a>
+            <a class="socials__link" href="https://www.instagram.com/htmlacademy/" target="_blank">IG</a>
           </li>
           <li class="socials__item">
-            <a href="https://www.facebook.com/htmlacademy" target="_blank">FB</a>
+            <a class="socials__link" href="https://www.facebook.com/htmlacademy" target="_blank">FB</a>
           </li>
         </ul>
-      </div>
-
-      <div class="main-footer__copyright">
         <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
           <p class="copyright__subject">HTML Academy</p>
-
           <img class="copyright__logo" src="./img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
         </a>
       </div>
     </footer>
-
   </div>
-
-
 </body>
 
 </html>

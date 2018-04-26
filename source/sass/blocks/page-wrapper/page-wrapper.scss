@@ -1,5 +1,5 @@
 .page-wrapper {
-  min-width: 320px;
-  margin: 0 auto;
-  outline: 2px dashed pink;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }

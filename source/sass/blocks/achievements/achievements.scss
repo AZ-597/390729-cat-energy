@@ -1,15 +1,19 @@
 .achievements {
   display: flex;
   flex-flow: column nowrap;
-  align-items: center;
+}
+
+.achievements__copy {
+  margin: 0;
+  font: normal 14px/18px $secondary-font;
 }
 
 .achievements__table {
-
+  /* Pls kll me */
 }
 
 .achievements__items-lead {
-
+  text-align: center;
 }
 
 .achievements__lead-value {
@@ -18,15 +22,33 @@
 }
 
 .achievements__items-goal {
-
+  text-align: center;
 }
 
 .achievements__goal-value {
   font: normal 12px/12px $secondary-font;
-  text-transform: uppercase;
 }
 
 .achievements__summary {
+  display: flex;
+  justify-content: center;
+  align-self: center;
   font: 400 14px/18px $primary-font;
   text-transform: uppercase;
 }
+
+.achievements__summary-subject {
+  display: flex;
+}
+
+.achievements__summary-value {
+  display: flex;
+}
+/*
+@media (min-width:$tablet-width) {
+  .achievements {
+    margin-top: -200px;
+    margin-bottom: 700px;
+  }
+}
+ */
