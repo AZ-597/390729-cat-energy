@@ -79,13 +79,14 @@
 
 @media (min-width: $desktop-width) {
   .map__map-frame {
-    height: 400px;
+    height: 395px;
   }
   .map__address {
     position: absolute;
     top: 50%;
-    width: 43.85%;
-    padding: 50px 0;
+    width: 42%;
+    padding: 60px 0;
+    padding-left: 36px;
     transform: translateY(50%);
     background-color: white;
   }

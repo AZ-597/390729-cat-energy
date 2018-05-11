@@ -77,9 +77,9 @@
     &::after {
       position: absolute;
       top: 0;
-      left:110px;
+      left: 110px;
       font: 400 285px/202px $primary-font;
-      color:  $grey-50;
+      color: $grey-50;
       content: counter(cunt-reset-oops-sorry);
       counter-increment: cunt-reset-oops-sorry;
       z-index: -1;
@@ -94,15 +94,24 @@
 }
 
 @media (min-width: $desktop-width) {
+  .advantages {
+    margin-bottom: -15px;
+    border-bottom: none;
+  }
   .advantages__list {
     flex-flow: row wrap;
+    justify-content: space-between;
   }
   .advantages__item {
     margin-left: 0;
-    width: 18.625%;
+    margin-top: 30px;
+    width: 20%;
     padding-top: 100px;
   }
   .advantages__item+.advantages__item {
-    margin-left: 8.5%;
+    margin-left: 0;
+  }
+  .advantages__item-copy {
+    width: 25ch;
   }
 }

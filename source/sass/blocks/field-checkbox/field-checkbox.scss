@@ -84,6 +84,11 @@
 @media (min-width: $desktop-width) {
   .field-checkbox {
     height: 52px;
+    width: 20.1%;
+    margin-bottom: 10px;
+    &:nth-child(odd) {
+      margin-right: 0;
+    }
   }
   .field-checkbox__label {
     font: 400 20px/20px $primary-font;

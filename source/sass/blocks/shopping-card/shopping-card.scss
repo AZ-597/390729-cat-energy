@@ -101,3 +101,29 @@
     outline: 1px dashed red;
   }
 }
+
+@media (min-width:$desktop-width) {
+  .shopping-card {
+    width: 20.1%;
+    margin-top: 124px;
+    margin-bottom: 18px;
+    padding:40px 38px;
+  }
+  .shopping-card__title {
+    margin-bottom: 18px;
+  }
+  .shopping-card__info {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .shopping-card__parameter-title {
+    height: 32px;
+  }
+
+  .shopping-card__parameter-value {
+    height: 32px;
+  }
+  .shopping-card__image-wrapper {
+    margin-bottom: 22px;
+  }
+}

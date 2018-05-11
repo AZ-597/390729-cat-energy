@@ -115,3 +115,34 @@
     font: 400 20px/28px $primary-font;
   }
 }
+
+@media (min-width:$desktop-width) {
+  .achievements {
+    flex-flow: column nowrap;
+  }
+  .achievements__copy {
+    width:50ch;
+    margin: 0;
+    margin-bottom: 70px;
+    padding: 0;
+  }
+  .achievements__table {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 60px;
+    padding: 0;
+  }
+  .achievements__summary {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+  }
+  .achievements__summary-value {
+    margin-left: 64px;
+  }
+  .achievements__goal-subject {
+    background-color: $grey-50;
+  }
+}

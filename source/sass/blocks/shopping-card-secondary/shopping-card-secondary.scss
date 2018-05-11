@@ -77,3 +77,41 @@
     text-align: right;
   }
 }
+
+@media (min-width:$desktop-width) {
+  .shopping-card-secondary {
+    flex-flow: row nowrap;
+    padding: 15px 0;
+    margin:0;
+    border-left: none;
+    border-right: none;
+    width: 73.3666%;
+    &:first-child {
+      margin-top: 0;
+    }
+    /* outline:1px dotted green; */
+  }
+  .shopping-card-secondary__title {
+    margin:0;
+    width: 36.68%;
+    line-height: 40px;
+    /* outline:1px dotted green; */
+  }
+  .shopping-card-secondary__size {
+    margin:0;
+    width: 26.64%;
+    text-align: left;
+    /* outline:1px dotted green; */
+  }
+  .shopping-card-secondary__cost {
+    margin:0;
+    width: 10.04%;
+    text-align: left;
+    /* outline:1px dotted green; */
+  }
+  .shopping-card-secondary__btn {
+    margin:0;
+    width: 26.64%;
+    outline:1px dotted green;
+  }
+}

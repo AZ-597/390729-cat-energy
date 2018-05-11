@@ -32,8 +32,9 @@
 
 @media (min-width: $desktop-width) {
   .field-textarea__input {
-    padding: 14px 30px;
+    padding: 10px 18px;
     font: 400 20px/30px $primary-font;
     min-height: 176px;
+    width: 100%;
   }
 }

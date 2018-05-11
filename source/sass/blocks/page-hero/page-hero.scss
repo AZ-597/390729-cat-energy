@@ -74,19 +74,23 @@
 
 @media (min-width: $desktop-width) {
   .page-hero {
-    margin-top: -60px;
+    padding-top: 0;
     background-image: url("../../../img/index-can-mobile@1x.png"), url("../../../img/index-background-mobile@1x.jpg");
     background-repeat: no-repeat, no-repeat;
-    background-position: center 170px, top right;
+    background-position: 64% 150px, top right;
     background-size: auto 500px, 50% auto;
+    outline: 1px dashed blue;
     & .wrapper {
-      min-height: 700px;
+      justify-content: center;
+      min-height: 725px;
+      outline: 1px dashed red;
     }
     & .btn {
       margin-left: 80px;
     }
   }
   .page-hero__heading {
+    max-width: 16ch;
     margin-left: 80px;
   }
   .page-hero__lead-text {

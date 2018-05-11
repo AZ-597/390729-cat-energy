@@ -40,5 +40,14 @@
 }
 
 @media (min-width: $desktop-width) {
-  /*  */
+  .page-header {
+    padding: 52px 0;
+    background: none;
+  }
+  .page-header--negative-margin {
+    margin-bottom: -170px;
+  }
+  .page-header--negative-margin-catalog {
+    margin-bottom: -20px;
+  }
 }

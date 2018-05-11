@@ -41,6 +41,7 @@
 }
 
 @media (min-width: $desktop-width) {
+
   .field-text+.field-text {
     margin-top: 20px;
   }
@@ -51,5 +52,17 @@
     height: 52px;
     padding: 0 20px;
     font: 400 20px/20px $primary-font;
+    &--email {
+      padding-right: 52px;
+    }
+    &--tel {
+      padding-right: 52px;
+    }
+  }
+  .field-text--desktop-half-width {
+    width: 46.6%;
+  }
+  .field-text--desktop-half-width+.field-text--desktop-half-width {
+    margin: 0;
   }
 }

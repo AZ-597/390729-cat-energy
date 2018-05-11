@@ -64,7 +64,10 @@
 
 @media (min-width: $desktop-width) {
   .main-menu__item-link {
-    font: 500 20px/2.25 $primary-font;
+    font: 400 20px/2.25 $primary-font;
+  }
+  .main-menu__item+.main-menu__item {
+    margin-left: 34px;
   }
   .main-menu__item-link--desktop-white-theme {
     color: white;

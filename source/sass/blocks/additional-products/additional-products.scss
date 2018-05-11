@@ -1,3 +1,10 @@
-.additional-products {
-
-}
+@media (min-width:$desktop-width) {
+  .additional-products {
+    margin-bottom: 85px;
+    .wrapper {
+      display: flex;
+      flex-flow: row wrap;
+      position: relative;
+    }
+  }
+}
