@@ -1,38 +1,121 @@
 .page-content {
   width: 100%;
+  overflow: hidden;
+  /* border: 4px dotted black; */
 }
 
 .page-content__heading-wrapper {
   max-width: $desktop-width;
   margin: 0 auto;
   padding: 0 20px;
-  padding-top: 25px;
+  padding-top:16px;
+  padding-bottom:28px;
+  /* border: 2px dotted blueviolet; */
+  &--special-offset {
+    margin-top: 24px;
+  }
 }
 
 .page-content__heading {
   margin: 0;
-  margin-bottom: 25px;
+  padding: 0;
   font: 400 36px/60px $primary-font;
+  /* border: 2px dotted violet; */
+}
+
+.page-content__subheading-wrapper {
+  max-width: $desktop-width;
+  margin: 0 auto;
+  margin-top: 28px;
+  margin-bottom: 24px;
+  padding: 0 20px;
+
+  /* border: 2px dotted purple; */
+}
+
+.page-content__subheading {
+  position: relative;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  font: 400 24px/24px $primary-font;
+  /* border: 2px dotted red; */
+  &::before,
+  &::after {
+    position: absolute;
+    top: 14px;
+    content: "";
+    display: flex;
+    width: 10000px;
+    height: 3px;
+    background-color: $primary-color;
+  }
+  &::before {
+    right: calc(100% + 20px);
+  }
+  &::after {
+    left: calc(100% + 20px);
+  }
 }
 
 @media (min-width: $tablet-width) {
   .page-content__heading {
-    margin: 0;
-    margin-bottom: 25px;
     font: 400 60px/60px $primary-font;
   }
   .page-content__heading-wrapper {
-    padding: 0 30px;
+    padding: 40px 30px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    &--special-offset {
+      margin-top: 0;
+    }
+  }
+  .page-content__subheading {
+    margin-left: 30px;
+    font: 400 36px/36px $primary-font;
+    &::before,
+    &::after {
+      top: 20px;
+      height: 3px;
+    }
+    &::before {
+      right: calc(100% + 30px);
+    }
+    &::after {
+      left: calc(100% + 30px);
+    }
+  }
+  .page-content__subheading-wrapper {
+    padding: 42px 30px;
+    &--designer-is-faggot {
+      margin-bottom: 0;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-content__heading {
-    margin: 0;
-    margin-bottom: 25px;
     font: 400 60px/60px $primary-font;
   }
   .page-content__heading-wrapper {
-    padding: 0 40px;
+    padding: 40px 40px;
+  }
+  .page-content__subheading {
+    margin-left: 0;
+    font: 400 36px/36px $primary-font;
+    &::before,
+    &::after {
+      top: 20px;
+      height: 3px;
+    }
+    &::before {
+      right: calc(100% + 40px);
+    }
+    &::after {
+      left: calc(100% + 40px);
+    }
+  }
+  .page-content__subheading-wrapper {
+    padding: 50px 40px;
   }
 }

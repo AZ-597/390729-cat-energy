@@ -2,23 +2,54 @@
   display: flex;
   align-items: baseline;
   width: 100%;
+  outline: 1px dashed tomato;
 }
+
 .field-text+.field-text {
-  margin-top: 20px;
+  margin-top: 14px;
 }
 
 .field-text__label {
-  font: 400 20px/20px $primary-font;
-  text-transform: uppercase;
-  color: $black;
-  white-space: nowrap;
   margin-right: 15px;
+  font: 400 16px/18px $primary-font;
+  color: $black;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .field-text__input {
-  padding: 0 15px;
-  height: 45px;
   width: 100%;
-  font: 400 20px/20px $primary-font;
+  height: 45px;
+  padding: 0 14px;
+  font: 400 16px/18px $primary-font;
+  text-transform: uppercase;
   border: 1px solid $grey-60;
+}
+
+@media (min-width: $tablet-width) {
+  .field-text+.field-text {
+    margin-top: 20px;
+  }
+  .field-text__label {
+    font: 400 20px/20px $primary-font;
+  }
+  .field-text__input {
+    height: 52px;
+    padding: 0 18px;
+    font: 400 20px/20px $primary-font;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-text+.field-text {
+    margin-top: 20px;
+  }
+  .field-text__label {
+    font: 400 20px/20px $primary-font;
+  }
+  .field-text__input {
+    height: 52px;
+    padding: 0 20px;
+    font: 400 20px/20px $primary-font;
+  }
 }

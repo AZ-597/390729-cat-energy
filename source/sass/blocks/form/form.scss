@@ -1,59 +1,111 @@
 .form {
-  /*  */
+  /* border: 2px dashed orange; */
 }
 
 .form__wrapper {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
+  max-width: $desktop-width;
+  margin: 0 auto;
+  padding: 0 20px;
+  /* border: 2px dotted purple; */
 }
 
 .form__lead {
   margin: 0;
+  margin-bottom: 26px;
+  padding: 0;
   font: 400 14px/18px $primary-font;
   text-transform: uppercase;
 }
 
 .form__fieldset {
-  padding: 20px 0;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 0;/* 22px; */
+  padding: 0;
   &--bordered {
+    margin: 0 -20px;
+    margin-top: 22px;
+    padding: 18px 20px;
     border-top: 1px solid $grey-60;
     border-bottom: 1px solid $grey-60;
   }
 }
 
-.form__fieldset-legend-wrap {
-  overflow: hidden;
-}
-
-.form__fieldset-legend {
-  position: relative;
-  font: 400 24px/24px $primary-font;
-  margin: 16px -20px;
-  padding: 0 20px;
-  width: auto;
-  display: inline-flex;
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top:10px;
-    display: flex;
-    height: 5px;
-    width: 5000px;
-    background-color: $primary-color;
-  }
-  &::before {
-    right: 100%;
-  }
-  &::after {
-    left: 100%;
-  }
-}
-
 .form__btn {
-  /*  */
+  margin: 0;
+  margin-top: 35px;
 }
 
 .form__footnote {
+  margin: 0;
+  margin-top: 22px;
+  margin-bottom: 30px;
   align-self: center;
+  font: 400 14px/16px $secondary-font;
+}
+
+/*  */
+
+@media (min-width: $tablet-width) {
+  .form__wrapper {
+    padding: 0 70px;
+    &:last-of-type {
+      display: flex;
+      flex-flow: row wrap;
+    }
+  }
+  .form__lead {
+    margin: 0;
+    margin-bottom: 70px;
+    padding: 0;
+    font: 400 20px/30px $primary-font;
+  }
+  .form__footnote {
+    font: 400 16px/16px $secondary-font;
+  }
+  .form__fieldset {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    &--bordered {
+      margin: 30px 0;
+      margin-top: 72px;
+      margin-bottom: 14px;
+      padding: 18px 20px;
+      border: 1px solid $grey-60;
+    }
+  }
+  .form__btn {
+    margin: 0;
+    margin-top: 40px;
+    margin-right: 9%;
+    width: 45.5%;
+  }
+  .form__footnote {
+    align-self: flex-end;
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    width: 45.5%;
+    height: 52px;
+    font: 400 16px/20px $secondary-font;
+    outline: 1px dashed red;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__wrapper {
+    padding: 0 40px;
+  }
+  .form__lead {
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+    font: 400 20px/30px $primary-font;
+  }
+  .form__footnote {
+    font: 400 16px/16px $secondary-font;
+  }
 }

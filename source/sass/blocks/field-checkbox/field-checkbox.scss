@@ -1,10 +1,12 @@
 .field-checkbox {
   display: flex;
   align-items: center;
+  height: 30px;
+  outline: 1px dashed tomato;
 }
 
 .field-checkbox+.field-checkbox {
-  margin-top: 20px;
+  margin-top: 11px;
 }
 
 .field-checkbox__input {
@@ -13,17 +15,17 @@
 
 .field-checkbox__label {
   position: relative;
-  font: 400 20px/20px $primary-font;
-  text-transform: uppercase;
+  margin-left: 46px;
+  font: 400 16px/18px $primary-font;
   color: $black;
+  text-transform: uppercase;
   white-space: nowrap;
-  margin-left: 40px;
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: -4px;
-    left: -40px;
+    top: -6px;
+    left: -46px;
   }
   &::before {
     width: 30px;
@@ -39,7 +41,51 @@
 }
 
 .field-checkbox__input:checked~.field-checkbox__label::after {
-  transform: scale(1) translate(10px, 3px) rotate(45deg);
   border-right: 2px solid $primary-color;
   border-bottom: 2px solid $primary-color;
+  transform: scale(1) translate(10px, 3px) rotate(45deg);
+}
+
+@media (min-width: $tablet-width) {
+  .field-checkbox+.field-checkbox {
+    margin: 0;
+  }
+  .field-checkbox {
+    height: 62px;
+    width: 45.5%;
+    margin: 0;
+    margin-bottom: 10px;
+    &:nth-child(odd) {
+      margin-right: 9%;
+    }
+  }
+  .field-checkbox__label {
+    margin-left: 60px;
+    font: 400 20px/20px $primary-font;
+    &::before,
+    &::after {
+      top: -10px;
+      left: -60px;
+    }
+    &::before {
+      width: 40px;
+      height: 40px;
+    }
+    &::after {
+      width: 10px;
+      height: 20px;
+    }
+  }
+  .field-checkbox__input:checked~.field-checkbox__label::after {
+    transform: scale(1) translate(15px, 8px) rotate(45deg);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-checkbox {
+    height: 52px;
+  }
+  .field-checkbox__label {
+    font: 400 20px/20px $primary-font;
+  }
 }

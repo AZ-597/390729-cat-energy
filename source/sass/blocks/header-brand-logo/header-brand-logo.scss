@@ -9,3 +9,15 @@
 .header-brand-logo__name {
   /*  */
 }
+
+@media (min-width:$tablet-width) {
+  .header-brand-logo__picture {
+    width: 50px;
+    height: 50px;
+    outline: 1px dashed red;
+  }
+
+  .header-brand-logo__name {
+    outline: 1px dashed red;
+  }
+}

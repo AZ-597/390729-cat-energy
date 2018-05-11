@@ -15,7 +15,8 @@
 
 .programs__case-lead {
   margin: 0;
-  font: 400 24px/37px $primary-font;
+  margin-left: 70px;
+  font: 400 24px/60px $primary-font;
   text-transform: uppercase;
 }
 
@@ -45,8 +46,43 @@
 }
 
 @media (min-width: $tablet-width) {
+  .programs {
+    margin-bottom: 16px;
+  }
+  .programs__case {
+    min-height: 370px;
+    margin: 0;
+    padding: 50px;
+  }
+  .programs__case+.programs__case {
+    margin-top: 32px;
+  }
+  .programs__case-lead {
+    margin: 0;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 0;
+    font: 400 36px/60px $primary-font;
+  }
   .programs__case-copy {
+    width: 60%;
+    margin: 0;
+    padding: 0;
+    font: normal 16px/22px $secondary-font;
     border: none;
+  }
+  .programs__case-link {
+    font: 400 20px/40px $primary-font;
+    &::after {
+      align-self: center;
+      content: "";
+      display: inline-flex;
+      width: 24px;
+      height: 16px;
+      margin-left: 26px;
+      background: url("../../../img/icon-right-arrow-long.svg") no-repeat;
+      background-position: center center;
+    }
   }
 }
 
