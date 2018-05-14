@@ -109,8 +109,8 @@
     align-items: flex-end;
     width: 30%;
     margin: 0;
-    margin-left: auto;
     margin-bottom: 20px;
+    margin-left: auto;
     padding: 0;
     font: 400 20px/28px $primary-font;
   }
@@ -121,7 +121,7 @@
     flex-flow: column nowrap;
   }
   .achievements__copy {
-    width:50ch;
+    width: 50ch;
     margin: 0;
     margin-bottom: 70px;
     padding: 0;
@@ -133,11 +133,11 @@
     padding: 0;
   }
   .achievements__summary {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
     width: 100%;
     margin: 0;
     padding: 0;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
   }
   .achievements__summary-value {
     margin-left: 64px;

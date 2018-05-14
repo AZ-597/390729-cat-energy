@@ -3,11 +3,11 @@
 }
 
 .advantages__list {
+  display: flex;
+  flex-flow: column nowrap;
   margin: 0;
   padding: 0;
   list-style: none;
-  display: flex;
-  flex-flow: column nowrap;
 }
 
 .advantages__item {
@@ -17,14 +17,14 @@
   &::before {
     content: "";
     position: absolute;
-    display: flex;
-    left: -80px;
     top: 0;
+    left: -80px;
+    display: flex;
     width: 60px;
     height: 60px;
     background-color: $primary-color;
-    background-position: center;
     background-repeat: no-repeat;
+    background-position: center;
     background-size: auto;
   }
   &:nth-child(1)::before {
@@ -42,29 +42,29 @@
 }
 
 .advantages__item-copy {
+  min-height: 60px;
   margin: 0;
   margin-top: 4px;
   font: normal 14px/18px $secondary-font;
-  min-height: 60px;
 }
 
 @media (min-width: $tablet-width) {
   .advantages {
     margin: 0;
-    border-bottom: 1px solid $grey-60;
     margin-bottom: 14px;
+    border-bottom: 1px solid $grey-60;
   }
   .advantages__list {
     flex-flow: row wrap;
     counter-reset: cunt-reset-oops-sorry;
   }
   .advantages__item {
-    margin-left: 0;
-    margin-bottom: 0;
-    margin-top: 24px;
     width: 46%;
-    padding-top: 100px;
     min-height: 288px;
+    margin-top: 24px;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 100px;
     &:nth-child(even) {
       margin-left: 8%;
     }
@@ -75,20 +75,20 @@
       height: 80px;
     }
     &::after {
+      content: counter(cunt-reset-oops-sorry);
       position: absolute;
       top: 0;
       left: 110px;
+      z-index: -1;
       font: 400 285px/202px $primary-font;
       color: $grey-50;
-      content: counter(cunt-reset-oops-sorry);
       counter-increment: cunt-reset-oops-sorry;
-      z-index: -1;
     }
   }
   .advantages__item-copy {
+    width: 80%;
     margin: 0;
     margin-top: 16px;
-    width: 80%;
     font: normal 16px/24px $secondary-font;
   }
 }
@@ -103,9 +103,9 @@
     justify-content: space-between;
   }
   .advantages__item {
-    margin-left: 0;
-    margin-top: 30px;
     width: 20%;
+    margin-top: 30px;
+    margin-left: 0;
     padding-top: 100px;
   }
   .advantages__item+.advantages__item {
