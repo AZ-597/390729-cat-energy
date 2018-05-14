@@ -2,9 +2,9 @@
   .additional-products {
     margin-bottom: 85px;
     .wrapper {
+      position: relative;
       display: flex;
       flex-flow: row wrap;
-      position: relative;
     }
   }
 }
