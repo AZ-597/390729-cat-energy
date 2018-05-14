@@ -10,6 +10,8 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
+    height: 150px;
+    padding-top: 30px;
     .wrapper {
       flex-flow: row nowrap;
       justify-content: space-between;

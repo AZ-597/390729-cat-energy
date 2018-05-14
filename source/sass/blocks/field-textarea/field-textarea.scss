@@ -4,13 +4,37 @@
 }
 
 .field-textarea__label {
-  /*  */
+  font: 400 20px/20px $primary-font;
+  text-transform: uppercase;
+  color: $black;
+  white-space: nowrap;
+  margin-right: 15px;
 }
 
 .field-textarea__input {
-  padding: 10px;
+  display: flex;
+  padding: 12px 14px;
   width: 100%;
   resize: vertical;
-  font: 400 20px/20px $primary-font;
+  font: 400 16px/18px $primary-font;
+  text-transform: uppercase;
   border: 1px solid $grey-60;
+  min-height: 150px;
+}
+
+@media (min-width: $tablet-width) {
+  .field-textarea__input {
+    padding: 14px 20px;
+    font: 400 20px/30px $primary-font;
+    min-height: 176px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-textarea__input {
+    padding: 10px 18px;
+    font: 400 20px/30px $primary-font;
+    min-height: 176px;
+    width: 100%;
+  }
 }

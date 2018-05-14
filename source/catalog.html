@@ -10,25 +10,31 @@
 
 <body>
   <div class="page-wrapper">
-    <header class="main-header">
-      <a class="brand-logo">
-        <img class="brand-logo__picture" src="http://placehold.it/33x38" alt="CatEnergy Logo">
-        <img class="brand-logo__name" src="http://placehold.it/101x31" alt="CatEnergy Logo">
-      </a>
+    <header class="page-header"> <!--  page-header- -negative-margin-catalog -->
+      <div class="wrapper">
+        <div class="page-header__mobile-wrap">
+          <a class="header-brand-logo">
+            <img class="header-brand-logo__picture" src="http://placehold.it/33x38" alt="CatEnergy Logo">
+          </a>
+          <a class="header-brand-logo">
+            <img class="header-brand-logo__name" src="http://placehold.it/101x31" alt="CatEnergy Logo">
+          </a>
 
-      <button class="menu-toggle-button">&times;</button>
+          <button class="menu-toggle-button menu-toggle-button--is-open"></button>
+        </div>
 
-      <ul class="main-menu main-menu--is-open">
-        <li class="main-menu__item">
-          <a class="main-menu__item-link" href="index.html">Главная</a>
-        </li>
-        <li class="main-menu__item">
-          <a class="main-menu__item-link">Каталог продукции</a>
-        </li>
-        <li class="main-menu__item">
-          <a class="main-menu__item-link" href="form.html">Подбор программы</a>
-        </li>
-      </ul>
+        <ul class="main-menu main-menu--is-open">
+          <li class="main-menu__item">
+            <a class="main-menu__item-link" href="index.html">Главная</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__item-link">Каталог продукции</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__item-link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main class="page-content">
@@ -36,79 +42,215 @@
         <h1 class="page-content__heading">Каталог продукции</h1>
       </div>
 
+      <h2 class="visually-hidden">Товары</h2>
+
+
       <section class="catalog">
-        <h2 class="visually-hidden">Товары</h2>
+        <div class="wrapper">
+          <!-- Кура -->
+          <article class="shopping-card" id="pro">
+            <a class="shopping-card__image-wrapper" href="this-product.html">
+              <img class="shopping-card__image" src="http://placehold.it/140x110" alt="Cat Energy Pro 500 г Курица">
+            </a>
+            <div class="shopping-card__info">
+              <h1 class="shopping-card__title">
+                <a href="this-product.html">Cat Energy
+                  <br> Pro 500 г</a>
+              </h1>
+              <table class="shopping-card__table">
+                <tr class="shopping-card__parameter">
+                  <td class="shopping-card__parameter-title">Объём</td>
+                  <td class="shopping-card__parameter-value">500 г</td>
+                </tr>
+                <tr class="shopping-card__parameter">
+                  <td class="shopping-card__parameter-title">Вкус</td>
+                  <td class="shopping-card__parameter-value">Курица</td>
+                </tr>
+                <tr class="shopping-card__parameter">
+                  <td class="shopping-card__parameter-title">Цена</td>
+                  <td class="shopping-card__parameter-value">700 Р.</td>
+                </tr>
+              </table>
+            </div>
+            <a class="shopping-card__btn btn" href="checkout.html">Заказать</a>
+          </article>
+          <article class="shopping-card">
+            <a class="shopping-card__image-wrapper" href="this-product.html">
+              <img class="shopping-card__image" src="http://placehold.it/140x110" alt="Cat Energy Pro 1000 г Курица">
+            </a>
+            <div class="shopping-card__info">
+              <h1 class="shopping-card__title">
+                <a href="this-product.html">Cat Energy
+                  <br> Pro 1000 г</a>
+              </h1>
+              <table class="shopping-card__table">
+                <tr class="shopping-card__parameter">
+                  <td class="shopping-card__parameter-title">Объём</td>
+                  <td class="shopping-card__parameter-value">1000 г</td>
+                </tr>
+                <tr class="shopping-card__parameter">
+                  <td class="shopping-card__parameter-title">Вкус</td>
+                  <td class="shopping-card__parameter-value">Курица</td>
+                </tr>
+                <tr class="shopping-card__parameter">
+                  <td class="shopping-card__parameter-title">Цена</td>
+                  <td class="shopping-card__parameter-value">1000 Р.</td>
+                </tr>
+              </table>
+            </div>
+            <a class="shopping-card__btn btn" href="checkout.html">Заказать</a>
+          </article>
+          <!-- Рыба -->
+          <article class="shopping-card">
+            <a class="shopping-card__image-wrapper" href="this-product.html">
+              <img class="shopping-card__image" src="http://placehold.it/140x110" alt="Cat Energy Pro 500 г Рыба">
+            </a>
+            <div class="shopping-card__info">
+              <h1 class="shopping-card__title">
+                <a href="this-product.html">Cat Energy
+                  <br> Pro 500 г</a>
+              </h1>
+              <table class="shopping-card__table">
+                <tr class="shopping-card__parameter">
+                  <td class="shopping-card__parameter-title">Объём</td>
+                  <td class="shopping-card__parameter-value">500 г</td>
+                </tr>
+                <tr class="shopping-card__parameter">
+                  <td class="shopping-card__parameter-title">Вкус</td>
+                  <td class="shopping-card__parameter-value">Рыба</td>
+                </tr>
+                <tr class="shopping-card__parameter">
+                  <td class="shopping-card__parameter-title">Цена</td>
+                  <td class="shopping-card__parameter-value">700 Р.</td>
+                </tr>
+              </table>
+            </div>
+            <a class="shopping-card__btn btn" href="checkout.html">Заказать</a>
+          </article>
+          <article class="shopping-card">
+            <a class="shopping-card__image-wrapper" href="this-product.html">
+              <img class="shopping-card__image" src="http://placehold.it/140x110" alt="Cat Energy Pro 1000 г Рыба">
+            </a>
+            <div class="shopping-card__info">
+              <h1 class="shopping-card__title">
+                <a href="this-product.html">Cat Energy
+                  <br> Pro 1000 г</a>
+              </h1>
+              <table class="shopping-card__table">
+                <tr class="shopping-card__parameter">
+                  <td class="shopping-card__parameter-title">Объём</td>
+                  <td class="shopping-card__parameter-value">1000 г</td>
+                </tr>
+                <tr class="shopping-card__parameter">
+                  <td class="shopping-card__parameter-title">Вкус</td>
+                  <td class="shopping-card__parameter-value">Рыба</td>
+                </tr>
+                <tr class="shopping-card__parameter">
+                  <td class="shopping-card__parameter-title">Цена</td>
+                  <td class="shopping-card__parameter-value">1000 Р.</td>
+                </tr>
+              </table>
+            </div>
+            <a class="shopping-card__btn btn" href="checkout.html">Заказать</a>
+          </article>
+          <!-- Греча -->
+          <article class="shopping-card" id="slim">
+            <a class="shopping-card__image-wrapper" href="this-product.html">
+              <img class="shopping-card__image" src="http://placehold.it/140x110" alt="Cat Energy Slim 500 г Гречка">
+            </a>
+            <div class="shopping-card__info">
+              <h1 class="shopping-card__title">
+                <a href="this-product.html">Cat Energy
+                  <br> Slim 500 г</a>
+              </h1>
+              <table class="shopping-card__table">
+                <tr class="shopping-card__parameter">
+                  <td class="shopping-card__parameter-title">Объём</td>
+                  <td class="shopping-card__parameter-value">500 г</td>
+                </tr>
+                <tr class="shopping-card__parameter">
+                  <td class="shopping-card__parameter-title">Вкус</td>
+                  <td class="shopping-card__parameter-value">Гречка</td>
+                </tr>
+                <tr class="shopping-card__parameter">
+                  <td class="shopping-card__parameter-title">Цена</td>
+                  <td class="shopping-card__parameter-value">400 Р.</td>
+                </tr>
+              </table>
+            </div>
+            <a class="shopping-card__btn btn" href="checkout.html">Заказать</a>
+          </article>
+          <article class="shopping-card">
+            <a class="shopping-card__image-wrapper" href="this-product.html">
+              <img class="shopping-card__image" src="http://placehold.it/140x110" alt="Cat Energy Pro 1000 г Гречка">
+            </a>
+            <div class="shopping-card__info">
+              <h1 class="shopping-card__title">
+                <a href="this-product.html">Cat Energy
+                  <br> Pro 1000 г</a>
+              </h1>
+              <table class="shopping-card__table">
+                <tr class="shopping-card__parameter">
+                  <td class="shopping-card__parameter-title">Объём</td>
+                  <td class="shopping-card__parameter-value">1000 г</td>
+                </tr>
+                <tr class="shopping-card__parameter">
+                  <td class="shopping-card__parameter-title">Вкус</td>
+                  <td class="shopping-card__parameter-value">Гречка</td>
+                </tr>
+                <tr class="shopping-card__parameter">
+                  <td class="shopping-card__parameter-title">Цена</td>
+                  <td class="shopping-card__parameter-value">700 Р.</td>
+                </tr>
+              </table>
+            </div>
+            <a class="shopping-card__btn btn" href="checkout.html">Заказать</a>
+          </article>
+          <!-- Рис -->
+          <article class="shopping-card">
+            <a class="shopping-card__image-wrapper" href="this-product.html">
+              <img class="shopping-card__image" src="http://placehold.it/140x110" alt="Cat Energy Pro 500 г Рис">
+            </a>
+            <div class="shopping-card__info">
+              <h1 class="shopping-card__title">
+                <a href="this-product.html">Cat Energy
+                  <br> Pro 500 г</a>
+              </h1>
+              <table class="shopping-card__table">
+                <tr class="shopping-card__parameter">
+                  <td class="shopping-card__parameter-title">Объём</td>
+                  <td class="shopping-card__parameter-value">500 г</td>
+                </tr>
+                <tr class="shopping-card__parameter">
+                  <td class="shopping-card__parameter-title">Вкус</td>
+                  <td class="shopping-card__parameter-value">Рис</td>
+                </tr>
+                <tr class="shopping-card__parameter">
+                  <td class="shopping-card__parameter-title">Цена</td>
+                  <td class="shopping-card__parameter-value">500 Р.</td>
+                </tr>
+              </table>
+            </div>
+            <a class="shopping-card__btn btn" href="checkout.html">Заказать</a>
+          </article>
 
 
-        <article class="shopping-card" id="pro">
-          <a class="shopping-card__image-wrapper" href="this-product.html">
-            <img class="shopping-card__image" src="http://placehold.it/140x144" alt="Cat Energy Slim 500 г">
-          </a>
-          <div class="shopping-card__info">
-            <h1 class="shopping-card__title">
-              <a href="this-product.html">Cat Energy <br> Slim 500 г</a>
-            </h1>
-
-            <table class="shopping-card__table">
-              <tr class="shopping-card__parameter">
-                <td class="shopping-card__parameter-title">Объём</td>
-                <td class="shopping-card__parameter-value">500 г</td>
-              </tr>
-              <tr class="shopping-card__parameter">
-                <td class="shopping-card__parameter-title">Вкус</td>
-                <td class="shopping-card__parameter-value">Рис</td>
-              </tr>
-              <tr class="shopping-card__parameter">
-                <td class="shopping-card__parameter-title">Цена</td>
-                <td class="shopping-card__parameter-value">500 Р.</td>
-              </tr>
-            </table>
+          <div class="catalog-helper-card">
+            <img class="catalog-helper-card__icon" src="http://placehold.it/30x30" alt="+">
+            <h3 class="catalog-helper-card__lead">Показать еще 100500 товаров</h3>
+            <p class="catalog-helper-card__copy">На самом деле вкусов гораздо больше!</p>
+            <a class="catalog-helper-card__btn btn btn--secondary" href="new-products.html">Показать все</a>
           </div>
-          <a class="shopping-card__btn btn" href="checkout.html">Заказать</a>
-        </article>
-
-        <article class="shopping-card" id="slim">
-          <a class="shopping-card__image-wrapper" href="this-product.html">
-            <img class="shopping-card__image" src="http://placehold.it/140x144" alt="Cat Energy Slim 500 г">
-          </a>
-          <div class="shopping-card__info">
-            <h1 class="shopping-card__title">
-              <a href="this-product.html">Cat Energy <br> Slim 500 г</a>
-            </h1>
-
-            <table class="shopping-card__table">
-              <tr class="shopping-card__parameter">
-                <td class="shopping-card__parameter-title">Объём</td>
-                <td class="shopping-card__parameter-value">500 г</td>
-              </tr>
-              <tr class="shopping-card__parameter">
-                <td class="shopping-card__parameter-title">Вкус</td>
-                <td class="shopping-card__parameter-value">Рис</td>
-              </tr>
-              <tr class="shopping-card__parameter">
-                <td class="shopping-card__parameter-title">Цена</td>
-                <td class="shopping-card__parameter-value">500 Р.</td>
-              </tr>
-            </table>
-          </div>
-          <a class="shopping-card__btn btn" href="checkout.html">Заказать</a>
-        </article>
-        <!-- Остальные карточки добавлю если тут всё норм -->
-
-        <div class="catalog-helper-card">
-          <img class="catalog-helper-card__icon" src="http://placehold.it/30x30" alt="+">
-          <h3 class="catalog-helper-card__lead">Показать еще 100500 товаров</h3>
-          <p class="catalog-helper-card__copy">На самом деле вкусов гораздо больше!</p>
-          <a class="catalog-helper-card__btn btn btn--secondary" href="new-products.html">Показать все</a>
         </div>
-
-
       </section>
+
+
+      <div class="page-content__subheading-wrapper">
+        <h2 class="page-content__subheading">Дополнительные товары</h2>
+      </div>
 
       <section class="additional-products">
         <div class="wrapper">
-          <h2 class="page-content__subheading">Дополнительные товары</h2>
-
           <div class="shopping-card-secondary">
             <p class="shopping-card-secondary__title">Сахарозаменитель</p>
             <p class="shopping-card-secondary__size">1 упаковка (100 г)</p>
@@ -143,48 +285,42 @@
 
       <section class="map">
         <h2 class="visually-hidden">Карта</h2>
-        <div class="map__address">
-          <p class="map__address-lead">Приглашаем к сотрудничеству дилеров!</p>
-          <address class="map__address-subject">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-          </address>
+        <div class="wrapper">
+          <div class="map__address">
+            <p class="map__address-lead">Приглашаем к сотрудничеству дилеров!</p>
+            <address class="map__address-subject">
+              <span class="map__address-street">ул. Большая Конюшенная д. 19/8</span>
+              <span class="map__address-city">Санкт-Петербург</span>
+            </address>
+          </div>
         </div>
         <iframe class="map__map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123657!2d30.32089461562391!3d59.93879686904846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1523718265597"></iframe>
       </section>
     </main>
 
-    <footer class="main-footer">
-      <div class="main-footer__logo">
-        <a class="footer-logo" href="index.html">
-          <img class="footer-logo__picture" src="./img/logo-footer.svg" alt="HTML Academy" width="128" height="24">
+    <footer class="page-footer">
+      <div class="wrapper">
+        <a href="index.html" class="footer-brand-logo">
+          <img class="footer-brand-logo__picture" src="./img/logo-footer.svg" alt="HTML Academy" width="128" height="24">
         </a>
-      </div>
-
-      <div class="main-footer__socials">
         <ul class="socials">
           <li class="socials__item">
-            <a href="https://vk.com/intensive_adaptive_14" target="_blank">VK</a>
+            <a class="socials__link" href="https://vk.com/intensive_adaptive_14" target="_blank">VK</a>
           </li>
           <li class="socials__item">
-            <a href="https://www.instagram.com/htmlacademy/" target="_blank">IG</a>
+            <a class="socials__link" href="https://www.instagram.com/htmlacademy/" target="_blank">IG</a>
           </li>
           <li class="socials__item">
-            <a href="https://www.facebook.com/htmlacademy" target="_blank">FB</a>
+            <a class="socials__link" href="https://www.facebook.com/htmlacademy" target="_blank">FB</a>
           </li>
         </ul>
-      </div>
-
-      <div class="main-footer__copyright">
         <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
           <p class="copyright__subject">HTML Academy</p>
-
           <img class="copyright__logo" src="./img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
         </a>
       </div>
     </footer>
-
   </div>
-
-
 </body>
 
 </html>

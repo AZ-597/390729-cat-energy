@@ -1,0 +1,10 @@
+@media (min-width:$tablet-width) {
+  .catalog {
+    margin-bottom: -20px;
+    .wrapper {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+  }
+}

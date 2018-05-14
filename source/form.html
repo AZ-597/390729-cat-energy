@@ -46,10 +46,9 @@
         <h2 class="visually-hidden">Форма заявки</h2>
 
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
+
           <div class="form__wrapper">
-
-            <p class="form__lead">Заполните анкету и мы подберем программу питания для вашего кота</p>
-
+            <p class="form__lead">Заполните анкету и мы подберем <br> программу питания для вашего кота</p>
 
             <div class="form__fieldset">
               <div class="field-text">
@@ -80,42 +79,47 @@
                 <label class="field-radio__label" for="choose-consultation">Не знаю (нужен ваш совет)</label>
               </div>
             </div>
+          </div>
 
-            <p class="form__fieldset-legend-wrap">
-              <span class="form__fieldset-legend">Контактные данные
-                <br> (владельца кота)</span>
-            </p>
+          <div class="page-content__subheading-wrapper">
+            <h2 class="page-content__subheading">Контактные данные (владельца кота)</h2>
+          </div>
 
-            <div class="form__fieldset">
-              <div class="field-text">
+          <div class="form__wrapper">
+            <div class="form__fieldset form__fieldset--full-width">
+              <div class="field-text field-text--desktop-half-width">
                 <label class="field-text__label" for="email">E-mail:*</label>
-                <input class="field-text__input" id="email" type="email" name="email" required>
+                <input class="field-text__input field-text__input--email" id="email" type="email" name="email" required>
               </div>
-              <div class="field-text">
+              <div class="field-text field-text--desktop-half-width">
                 <label class="field-text__label" for="tel">Телефон:*</label>
-                <input class="field-text__input" id="tel" type="tel" name="tel" required>
+                <input class="field-text__input field-text__input--tel" id="tel" type="tel" name="tel" required>
               </div>
             </div>
+          </div>
 
-            <p class="form__fieldset-legend-wrap">
-              <span class="form__fieldset-legend">Комментарий</span>
-            </p>
+          <div class="page-content__subheading-wrapper">
+            <h2 class="page-content__subheading">Комментарий</h2>
+          </div>
 
-            <div class="form__fieldset">
+          <div class="form__wrapper">
+            <div class="form__fieldset form__fieldset--full-width">
               <div class="field-textarea">
                 <label class="field-textarea__label visually-hidden" for="letter">Расскажите о повадках кота</label>
-                <textarea class="field-textarea__input" id="letter" name="letter" cols="30" rows="10"></textarea>
+                <textarea class="field-textarea__input" id="letter" name="letter">Расскажите обо всех повадках кота</textarea>
               </div>
             </div>
+          </div>
 
-            <p class="form__fieldset-legend-wrap">
-              <span class="form__fieldset-legend">Дополнительно</span>
-            </p>
+          <div class="page-content__subheading-wrapper page-content__subheading-wrapper--designer-is-faggot">
+            <h2 class="page-content__subheading">Дополнительно</h2>
+          </div>
 
-            <div class="form__fieldset">
+          <div class="form__wrapper">
+            <div class="form__fieldset form__fieldset--full-width">
               <div class="field-checkbox">
                 <input class="field-checkbox__input" id="add-sugar-sub" type="checkbox" name="additions" value="sugarSubstitute" disabled>
-                <label class="field-checkbox__label" for="add-sugar-sub" >Сахарозаменитель</label>
+                <label class="field-checkbox__label" for="add-sugar-sub">Сахарозаменитель</label>
               </div>
               <div class="field-checkbox">
                 <input class="field-checkbox__input" id="add-water" type="checkbox" name="additions" value="water">
@@ -131,11 +135,11 @@
               </div>
             </div>
 
-            <button class="form__btn btn" type="submit">Отправить заявку</button>
+            <button class="form__btn btn btn--big" type="submit">Отправить заявку</button>
             <p class="form__footnote">* — Обязательные поля</p>
           </div>
-        </form>
 
+        </form>
       </section>
 
 

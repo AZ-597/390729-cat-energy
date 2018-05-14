@@ -1,5 +1,6 @@
 .page-header {
   width: 100%;
+  border-bottom: 1px solid $grey-50;
   .wrapper {
     display: flex;
     flex-flow: column nowrap;
@@ -25,6 +26,8 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
+    padding: 22px 0;
+    border: none;
     .wrapper {
       flex-flow: row nowrap;
       justify-content: space-between;
@@ -37,5 +40,14 @@
 }
 
 @media (min-width: $desktop-width) {
-  /*  */
+  .page-header {
+    padding: 52px 0;
+    background: none;
+  }
+  .page-header--negative-margin {
+    margin-bottom: -170px;
+  }
+  .page-header--negative-margin-catalog {
+    margin-bottom: -20px;
+  }
 }
