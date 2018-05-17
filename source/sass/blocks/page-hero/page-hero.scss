@@ -1,6 +1,9 @@
 .page-hero {
   padding-top: 30px;
-  background-image: url("../../../img/index-can-mobile@1x.png"), url("../../../img/index-background-mobile@1x.jpg");
+  @media (min-resolution: $retina-dpi), (min-resolution:$retina-dppx) {
+    background-image: url("../img/index-can-mobile@2x.png"), url("../img/index-background-mobile@2x.jpg");
+  }
+  background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: center 170px, top center;
   background-size: auto auto, 100% auto;
@@ -35,12 +38,18 @@
 
 @media (min-width: $tablet-width) {
   .page-hero {
-    background-image: url("../../../img/index-can-mobile@1x.png"), none;
-    background-repeat: no-repeat, no-repeat;
+    background-image: url("../img/index-can-tablet@1x.jpg"), none;
+    @media (min-resolution: $retina-dpi), (min-resolution:$retina-dppx) {
+      background-image: url("../img/index-can-tablet@2x.jpg"), none;
+    }
+    background-repeat: no-repeat,
+    no-repeat;
     /* background-position: center bottom, top center; */
-    background-position: 110px bottom, top center;
+    background-position: 110px bottom,
+    top center;
     /* background-size: auto 60%, 100% auto; */
-    background-size: 82%, 100%;
+    background-size: 82%,
+    100%;
     & .wrapper {
       display: flex;
       flex-flow: column nowrap;
@@ -75,7 +84,10 @@
 @media (min-width: $desktop-width) {
   .page-hero {
     padding-top: 0;
-    background-image: url("../../../img/index-can-mobile@1x.png"), url("../../../img/index-background-mobile@1x.jpg");
+    @media (min-resolution: $retina-dpi), (min-resolution:$retina-dppx) {
+      background-image: url("../img/index-can-desktop@2x.png"), url("../img/index-background-desktop@2x.jpg");
+    }
+    background-image: url("../img/index-can-desktop@1x.png"), url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat, no-repeat;
     background-position: 64% 150px, top right;
     background-size: auto 500px, 50% auto;

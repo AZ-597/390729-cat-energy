@@ -14,10 +14,15 @@
       <div class="wrapper">
         <div class="page-header__mobile-wrap">
           <a class="header-brand-logo">
-            <img class="header-brand-logo__picture" src="http://placehold.it/33x38" alt="CatEnergy Logo">
+            <picture>
+              <source media="(min-width: 1300px)" sizes="300px" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" sizes="250px" srcset="img/logo-tablet.svg">
+              <img src="img/logo-mobile.svg" height="38" alt="CatEnergy Logo">
+            </picture>
+            <!-- <img class="header-brand-logo__picture" src="http://placehold.it/33x38" alt="CatEnergy Logo">
           </a>
           <a class="header-brand-logo">
-            <img class="header-brand-logo__name" src="http://placehold.it/101x31" alt="CatEnergy Logo">
+            <img class="header-brand-logo__name" src="http://placehold.it/101x31" alt="CatEnergy Logo"> -->
           </a>
 
           <button class="menu-toggle-button menu-toggle-button--is-open"></button>
@@ -182,7 +187,7 @@
         </ul>
         <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
           <p class="copyright__subject">HTML Academy</p>
-          <img class="copyright__logo" src="./img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
+          <img class="copyright__logo" src="./img/htmlacademy.svg" alt="HTML Academy" width="34" height="34">
         </a>
       </div>
     </footer>
